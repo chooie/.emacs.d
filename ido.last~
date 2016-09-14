@@ -1,0 +1,82 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/chooie/code/clojure/fwpd/src/" . "fwpd/")
+ ("/Users/chooie/code/clojure/fwpd/" . "src/")
+ ("/Users/chooie/code/clojure/clojure-test/test/" . "clojure_test/")
+ ("/Users/chooie/code/clojure/clojure-test/" . "test/")
+ ("/Users/chooie/code/clojure/" . "clojure-test/")
+ ("/Users/chooie/code/clojure/clojure-test/src/" . "clojure_test/")
+ ("/Users/chooie/code/" . "clojure/")
+ ("/Users/chooie/" . ".lein/")
+ ("/Users/chooie/.emacs.d/" . "customizations/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/chooie/.emacs.d/customizations/"
+ "/Users/chooie/.lein/"
+ "/Users/chooie/.emacs.d/"
+ "/Users/chooie/code/clojure/fwpd/"
+ "/Users/chooie/code/clojure/fwpd/src/fwpd/"
+ "/Users/chooie/code/clojure/clojure-test/src/clojure_test/"
+ "/Users/chooie/code/clojure/clojure-test/test/clojure_test/"
+ "/Users/chooie/code/clojure/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "setup-clojure.el"
+ "profiles.clj"
+ "editing.el"
+ "ui.el"
+ "init.el"
+ "project.clj"
+ "suspects.csv"
+ "core.clj"
+ "chap-2.clj"
+ "core_test.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/chooie/" (22261 35209 0 0) "WebstormProjects/" "VirtualBox VMs/" "vendor/" "units174/" "Tutorial" "The Red Pill Handbook 2nd Ed.pdf" "Public/" "projects/" "Pictures/" "Music/" "Movies/" "matlab_crash_dump.12054-1" "Library/" "good-travel-software/" "GLFW/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "code/" "ClionProjects/" "Calibre Library/" "blender-2.76b-OSX_10.6-x86_64/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Charlie’s MacBook Pro-5.0.8" ".zcompdump-Charlie’s MacBook Pro-5.0.2" ".WebStorm9/" ".WebStorm11/" ".WebStorm10/" ".WebIde80/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".thumbnails/" ".swp" ".swo" ".swipl-dir-history/" ".subversion/" ".ssh/" ".PyCharm50/" ".pearrc" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".node_repl_history" ".node-gyp/" ".mysql_history" ".mongorc.js" ".meteorsession" ".meteor/" ".matplotlib/" ".matlab/" ".m2/" ".local/" ".lesshst" ".lein/" ".kodi/" ".jspm/" ".IntelliJIdea15/" ".httpie/" ".homestead/" ".gitconfig" ".ghci" ".ghc-mod/" ".ghc/" ".gem/" ".fontconfig/" ".emacs.d/" ".DS_Store" ".dropbox/" ".dbshell" ".cups/" ".config/" ".composer/" ".CFUserTextEncoding" ".cache/" ".cabal/" ".bash_history" ".atom/" ".android/" ".aliases" "../" "./")
+
+ ("/Users/chooie/.emacs.d/customizations/" (22261 31976 0 0) "ui.el~" "ui.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/chooie/.emacs.d/" (22261 34956 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last~" "ido.last" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf~" ".recentf" ".gitignore" "../" "./")
+
+ ("/Users/chooie/.lein/" (22261 31738 0 0) "self-installs/" "repl-history" "profiles.clj" "../" "./")
+
+ ("/Users/chooie/code/clojure/fwpd/" (22261 32478 0 0) "test/" "target/" "suspects.csv" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "dev-resources/" "CHANGELOG.md" ".nrepl-port" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/chooie/.emacs.d/elpa/cider-20160324.2321/" (22261 30023 0 0) "nrepl-client.elc" "nrepl-client.el" "cider.elc" "cider.el" "cider-util.elc" "cider-util.el" "cider-test.elc" "cider-test.el" "cider-stacktrace.elc" "cider-stacktrace.el" "cider-selector.elc" "cider-selector.el" "cider-scratch.elc" "cider-scratch.el" "cider-resolve.elc" "cider-resolve.el" "cider-repl.elc" "cider-repl.el" "cider-popup.elc" "cider-popup.el" "cider-pkg.el" "cider-overlays.elc" "cider-overlays.el" "cider-mode.elc" "cider-mode.el" "cider-macroexpansion.elc" "cider-macroexpansion.el" "cider-interaction.elc" "cider-interaction.el" "cider-inspector.elc" "cider-inspector.el" "cider-grimoire.elc" "cider-grimoire.el" "cider-eldoc.elc" "cider-eldoc.el" "cider-doc.elc" "cider-doc.el" "cider-debug.elc" "cider-debug.el" "cider-compat.elc" "cider-compat.el" "cider-common.elc" "cider-common.el" "cider-client.elc" "cider-client.el" "cider-classpath.elc" "cider-classpath.el" "cider-browse-ns.elc" "cider-browse-ns.el" "cider-autoloads.el" "cider-apropos.elc" "cider-apropos.el" "../" "./")
+
+ ("/Users/chooie/code/clojure/fwpd/src/fwpd/" (22261 25000 0 0) "core.clj" "../" "./")
+
+ ("/Users/chooie/code/clojure/fwpd/src/" (22261 24763 0 0) "fwpd/" "../" "./")
+
+ ("/Users/chooie/code/clojure/" (22261 24763 0 0) "fwpd/" "clojure-test/" "../" "./")
+
+ ("/Users/chooie/code/clojure/clojure-test/" (22260 7993 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "dev-resources/" "clojure-test.iml" "CHANGELOG.md" ".nrepl-port" ".lein-repl-history" ".lein-failures" ".idea/" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/chooie/code/clojure/clojure-test/src/clojure_test/" (22260 4531 0 0) "core.clj" "chap-2.clj" "../" "./")
+
+ ("/Users/chooie/code/clojure/clojure-test/test/clojure_test/" (22257 12776 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/chooie/code/clojure/clojure-test/test/" (22257 11026 0 0) "clojure_test/" "../" "./")
+
+ ("/Users/chooie/.composer/" (22023 61528 0 0) "vendor/" "composer.lock" "composer.json" "cache/" "cacert.pem" "2015-06-03_11-27-17-8c81ec0-old.phar" "2014-12-02_11-43-30-c0e6656-old.phar" "2014-10-20_19-16-14-a309e1d-old.phar" "2014-09-18_15-58-10-2cb64c8-old.phar" "2014-06-22_18-24-28-28c65b5-old.phar" ".htaccess" ".DS_Store" "../" "./")
+
+ ("/Users/chooie/code/clojure/clojure-test/src/" (22257 11026 0 0) "clojure_test/" "../" "./")
+
+ ("/Users/chooie/code/" (22255 8893 0 0) "websites/" "telecoms/" "Swift/" "space-game/" "seng/" "prolog/" "opengl-learning/" "old_haskell/" "mongo/" "meteor/" "LearnOpenGL/" "javascript/" "info/" "haskell-learning/" "graphics-game.zip" "graphics-game/" "distributed-systems-cs4032/" "computer-graphics-cs4052/" "clojure/" "antons_opengl_tutorials_book/" ".DS_Store" "../" "./")
+
+ ("/Users/chooie/.emacs.d/themes/" (21697 15558 0 0) "zenburn-theme.el" "tomorrow-theme.el" "tomorrow-night-theme.el" "tomorrow-night-eighties-theme.el" "tomorrow-night-bright-theme.el" "tomorrow-night-blue-theme.el" "color-theme-tomorrow.el" "../" "./")
+
+ ("/Users/" (22189 16980 0 0) "Shared/" "Guest/" "chooie/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
