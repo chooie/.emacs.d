@@ -59,6 +59,8 @@
     ;; of ido
     ido-ubiquitous
 
+    scss-mode
+
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
@@ -75,7 +77,11 @@
 
     yasnippet
 
-    emmet-mode))
+    emmet-mode
+
+    gitignore-mode
+
+    helm))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -146,6 +152,9 @@
 (load "setup-js.el")
 (load "latex-settings.el")
 
+;; Auto reload buffers when the file changes
+(global-auto-revert-mode 1)
+
 ;; Smartparens
 (use-package smartparens-config
     :ensure smartparens
@@ -202,3 +211,34 @@ i.e. change right window to bottom, or change bottom window to right."
          ("\\.md\\'" . markdown-mode)
          ("\\.markdown\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(cider-boot-parameters "cider repl -s wait")
+ '(coffee-tab-width 2))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; SCSS
+;; Don't compile on save
+(setq scss-compile-at-save nil)
+
+
+;; Helm
+(require 'helm-config)
+(helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-set-key (kbd "C-x b") 'helm-mini)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-unset-key (kbd "C-x c"))
+
+;; Use C-h for backspace in helm
+(define-key helm-map (kbd "C-h") nil)
