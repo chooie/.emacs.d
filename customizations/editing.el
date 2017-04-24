@@ -99,7 +99,7 @@
 (add-hook 'emmet-mode-hook 'turn-on-smartparens-strict-mode)
 
 ;; CSS
-(add-hook 'css-mode-hook 
-          '(lambda() 
-             (setq css-indent-offset 2) 
-             (setq indent-tabs-mode nil))) 
+(add-hook 'css-mode-hook
+          '(lambda()
+             (setq css-indent-offset 2)
+             (setq indent-tabs-mode nil)))

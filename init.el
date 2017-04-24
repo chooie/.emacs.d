@@ -117,7 +117,6 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-
 ;;;;
 ;; Customization
 ;;;;
@@ -228,7 +227,6 @@ i.e. change right window to bottom, or change bottom window to right."
 ;; SCSS
 ;; Don't compile on save
 (setq scss-compile-at-save nil)
-
 
 ;; Helm
 (require 'helm-config)
