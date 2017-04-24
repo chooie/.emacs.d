@@ -34,11 +34,6 @@
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 120)
 
-;; Uncomment the lines below by removing semicolons and play with the
-;; values in order to set the width (in characters wide) and height
-;; (in lines high) Emacs will have whenever you start it
-;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 80) (height . 20)))
-
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
       x-select-enable-clipboard t
@@ -77,15 +72,3 @@
 (setq whitespace-style '(face lines-tail))
 
 (add-hook 'prog-mode-hook 'whitespace-mode)
-
-;; ;; Add ruler at line length
-;; (require 'fill-column-indicator)
-;; (setq-default fill-column 80)
-;; ;; Don't display ruler for special buffers
-;; (define-globalized-minor-mode global-fci-mode fci-mode
-;;     (lambda ()
-;;       (if (and
-;;            (not (string-match "^\*.*\*$" (buffer-name)))
-;;            (not (eq major-mode 'dired-mode)))
-;;           (fci-mode 1))))
-;;   (global-fci-mode 1)
