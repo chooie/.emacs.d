@@ -2,9 +2,6 @@
 ;; Clojure
 ;;;;
 
-;; Enable paredit for Clojure
-;; (add-hook 'clojure-mode-hook 'enable-paredit-mode)
-
 ;; Enable auto indent
 (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 (add-hook 'aggressive-indent-mode-hook
@@ -24,7 +21,6 @@
 ;; syntax hilighting for midje
 (add-hook 'clojure-mode-hook
           (lambda ()
-            (setq inferior-lisp-program "lein repl")
             (font-lock-add-keywords
              nil
              '(("(\\(facts?\\)"
@@ -69,54 +65,11 @@
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
-;; We don't want clojure-mode for cljs?
-;(add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
-
-
-;; key bindings
-;; these help me out with the way I usually develop web apps
-(defun cider-start-http-server ()
-  (interactive)
-  (cider-load-current-buffer)
-  (let ((ns (cider-current-ns)))
-    (cider-repl-set-ns ns)
-    (cider-interactive-eval (format "(println '(def server (%s/start))) (println 'server)" ns))
-    (cider-interactive-eval (format "(def server (%s/start)) (println server)" ns))))
-
-
-(defun cider-refresh ()
-  (interactive)
-  (cider-interactive-eval (format "(user/reset)")))
-
-(defun cider-user-ns ()
-  (interactive)
-  (cider-repl-set-ns "user"))
-
-(eval-after-load 'cider
-  '(progn
-     (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
-     (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
-     (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
-     (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
-
-(defun cider-namespace-refresh ()
-  (interactive)
-  (cider-interactive-eval
-   "(require 'clojure.tools.namespace.repl)
-    (clojure.tools.namespace.repl/refresh)"))
-
-(define-key clojure-mode-map (kbd "M-r") 'cider-namespace-refresh)
-
-;; cljr-refactor
-;; WARNING - This is causing loading to fuck up
-;; (require 'clj-refactor)
 
 ; Suppress prompt to rebuild AST - do so automatically
 (setq cljr-warn-on-eval nil)
 
 (defun my-clojure-mode-hook ()
-    ;; (clj-refactor-mode 1)
     (yas-minor-mode 1) ; for adding require/use/import statements
     ;; This choice of keybinding leaves cider-macroexpand-1 unbound
     (cljr-add-keybindings-with-prefix "C-c C-m"))
